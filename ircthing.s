@@ -93,7 +93,7 @@ _start:
 			inc rsi
 			cmp [rsi], dword "PING"
 			jne pingscanloop
-			cmp [rsi+5], byte ' '
+			cmp [rsi+5], byte ':'
 			jne pingscanloop
 
 			mov [rsi+1], byte 'O'
